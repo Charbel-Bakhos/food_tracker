@@ -1,5 +1,5 @@
-from flask import Blueprint, render_template
-from sqlalchemy.ext.declarative.api import comparable_using, request
+from flask import Blueprint, render_template, request
+
 
 main = Blueprint ("main", __name__)
 
