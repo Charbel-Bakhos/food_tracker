@@ -2,6 +2,7 @@ from flask import Flask
 from .main.routes import main
 from .extensions import db
 
+# Creating flask app
 def create_app():
     app = Flask(__name__)
 
