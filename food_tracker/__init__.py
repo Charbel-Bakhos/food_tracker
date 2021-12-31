@@ -1,12 +1,10 @@
 from flask import Flask
-from 
+from controllers.routes import food
 
 
 def create_app():
     app = Flask(__name__)
 
-    @app.route('/')
-    def index():
-        return "test"
+    app.register_blueprint(food)
 
     return app

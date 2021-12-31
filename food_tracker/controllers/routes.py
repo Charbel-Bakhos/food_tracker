@@ -1,7 +1,7 @@
 from flask import Blueprint
 
-main = Blueprint ("main", __name__)
+food = Blueprint ("main", __name__)
 
-@main.route("/")
+@food.route("/")
 def index():
     return "blueprint test"
