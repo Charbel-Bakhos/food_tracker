@@ -1,5 +1,5 @@
 from flask import Flask
-from .controllers.routes import food
+from .controllers.main import food
 
 
 def create_app():
