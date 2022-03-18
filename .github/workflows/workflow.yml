@@ -47,7 +47,7 @@ jobs:
         id: deploy
         run: |
           aws deploy create-deployment \
-            --application-name application-name \
-            --deployment-group-name AppDeploymentGroupName \
+            --application-name food_tracker \
+            --deployment-group-name food_tracker_deployment_group \
             --deployment-config-name CodeDeployDefault.OneAtATime \
             --github-location repository=${{ github.repository }},commitId=${{ github.sha }}
