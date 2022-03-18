@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /home/ubuntu/food_tracker
-source environment/bin/activate
+source env/bin/activate
 supervisord -c supervisord.conf
